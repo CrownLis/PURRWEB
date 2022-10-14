@@ -1,0 +1,166 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000;
+  position: relative;
+  text-align: center;
+}
+
+.footer__download-title {
+  font-family: "Noto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.03em;
+  margin-bottom: 32px;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+}
+
+.footer__nav-background {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.footer__nav-text {
+  font-family: "Avenir";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: left;
+}
+
+.footer__icons-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  z-index: 1;
+}
+
+.footer__icon {
+  width: 100%;
+  max-width: 258px;
+  max-height: 81px;
+  cursor: pointer;
+}
+
+.footer__icon:hover {
+  opacity: 0.8;
+}
+
+.footer__nav-brand {
+  font-family: "Avenir";
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 40px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.footer__nav-text {
+  font-family: "Avenir";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 18px;
+}
+
+.footer__nav-text--extra-bold {
+  font-weight: 800;
+}
+
+.footer__nav-link {
+  font-family: "Avenir";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  color: inherit;
+  margin-bottom: 20px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.footer__nav-link:hover {
+  opacity: 0.8;
+}
+
+.footer__nav-right,
+.footer__nav-left {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0px;
+  z-index: 1;
+}
+
+.footer__nav-right .footer__copyright {
+  display: none;
+}
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .footer__nav {
+    margin: 0 50px;
+  }
+
+  .footer__icon {
+    width: 220px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 565px) {
+  .footer__nav {
+    margin: 0 25px;
+  }
+
+  .footer__icon {
+    width: 180px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .footer__icons-wrapper,
+  .footer__nav {
+    flex-direction: column;
+  }
+
+  .footer__icons-wrapper {
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer__icon {
+    min-height: 60px;
+  }
+
+  .footer__nav {
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+  }
+
+  .footer__nav-right,
+  .footer__nav-left {
+    padding: 50px 0px 0px 0px;
+  }
+
+  .footer__nav-left .footer__copyright {
+    display: none;
+  }
+
+  .footer__nav-right .footer__copyright {
+    display: block;
+  }
+
+  .footer__nav-link,
+  .footer__nav-text,
+  .footer__nav-brand {
+    text-align: center;
+  }
+}

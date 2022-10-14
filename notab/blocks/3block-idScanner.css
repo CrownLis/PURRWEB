@@ -1,0 +1,125 @@
+.id-scanner {
+  background-image: url("./../assets/images/jpg/background-3block.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.id-scanner__wrapper {
+  display: flex;
+  margin: 0 100px;
+  gap: 50px;
+}
+
+.id-scanner__phones-img {
+  width: 100%;
+  max-width: 330px;
+}
+
+.id-scanner__info,
+.id-scanner__phones-first,
+.id-scanner__phones-second {
+  padding-top: 450px;
+  width: 30%;
+}
+
+.id-scanner__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 65px;
+}
+
+.id-scanner__info-title {
+  font-family: "Montserrat";
+  font-size: 51px;
+  line-height: 62px;
+  max-width: 400px;
+}
+
+.id-scanner__info-text {
+  font-family: "Noto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  max-width: 315px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .id-scanner__wrapper {
+    margin: 0 50px;
+  }
+
+  .id-scanner__info-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .id-scanner__info-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 565px) {
+  .id-scanner__info,
+  .id-scanner__phones-first,
+  .id-scanner__phones-second {
+    padding-top: 300px;
+  }
+
+  .id-scanner__wrapper {
+    display: flex;
+    height: 100%;
+    margin: 0 25px;
+  }
+
+  .id-scanner__info-title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .id-scanner__info-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .id-scanner__wrapper {
+    display: flex;
+    margin: 0 15px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .id-scanner__phones-img {
+    max-width: 290px;
+    max-height: 575px;
+  }
+
+  .id-scanner__info,
+  .id-scanner__phones-first,
+  .id-scanner__phones-second {
+    padding-top: 0px;
+    width: auto;
+  }
+
+  .id-scanner__info {
+    order: -1;
+    padding-top: 250px;
+    margin-bottom: 0;
+  }
+
+  .id-scanner__info-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .id-scanner__info-text {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

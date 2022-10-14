@@ -1,0 +1,268 @@
+.platform {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.platform__wrapper {
+  margin: 0 100px;
+}
+
+.platform__wrapper-background {
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  z-index: 0;
+}
+
+.platform__sides {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.platform__bottom {
+  position: relative;
+  top: -150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 100px;
+}
+
+.platform__bottom-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.platform__bottom-icon {
+  max-height: 52px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.platform__bottom-icon:hover {
+  opacity: 0.8;
+}
+
+.platform__sides-left {
+  align-items: center;
+  padding-right: 180px;
+  min-width: 375px;
+}
+
+.platform__sides-info {
+  position: relative;
+  font-family: "Noto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  width: 100%;
+  margin: 125px auto 0;
+}
+
+.platform__sides-left-background {
+  position: absolute;
+  top: -180px;
+  left: -120px;
+}
+
+.platform__sides-left-line {
+  position: absolute;
+  top: -45px;
+  left: -20px;
+}
+
+.platform__sides-text {
+  position: relative;
+  font-family: "Noto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  margin-top: 110px;
+  padding-left: 90px;
+  max-width: 380px;
+}
+
+.platform__bottom-subtitle {
+  font-family: "Montserrat";
+  font-size: 35px;
+  line-height: 70px;
+  margin-top: auto;
+}
+
+.platform__sides-title {
+  font-family: "Montserrat";
+  font-size: 64px;
+  line-height: 70px;
+  max-width: 650px;
+}
+
+.platform__sides-phone {
+  position: relative;
+  top: -120px;
+  width: 100%;
+  min-width: 700px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .platform__wrapper {
+    margin: 0 50px;
+  }
+
+  .platform__sides-left {
+    min-width: 350px;
+    padding-right: 65px;
+  }
+
+  .platform__sides-phone {
+    top: -80px;
+    min-width: 550px;
+  }
+
+  .platform__sides-text {
+    margin-top: 20px;
+    padding-left: 0;
+  }
+
+  .platform__sides-title {
+    font-size: 50px;
+    line-height: 55px;
+    max-width: 650px;
+  }
+
+  .platform__bottom {
+    top: -125px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .platform__bottom-subtitle {
+    font-size: 25px;
+    line-height: 50px;
+    margin-bottom: 32px;
+  }
+
+  .platform__sides-left-background {
+    display: none;
+  }
+
+  .platform__sides-left-line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 565px) {
+  .platform__wrapper {
+    margin: 0 25px;
+  }
+
+  .platform__sides-left {
+    min-width: 265px;
+    padding-right: 0;
+  }
+
+  .platform__sides-text {
+    margin-top: 20px;
+    padding-left: 0;
+  }
+
+  .platform__sides-phone {
+    top: -45px;
+    min-width: 450px;
+  }
+
+  .platform__sides-title {
+    font-size: 45px;
+    line-height: 50px;
+    max-width: 650px;
+  }
+
+  .platform__bottom-subtitle {
+    font-size: 25px;
+    line-height: 45px;
+    margin-bottom: 32px;
+  }
+
+  .platform__bottom {
+    top: -100px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .platform__sides-left-background {
+    display: none;
+  }
+
+  .platform__sides-left-line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .platform__wrapper,
+  .platform__bottom {
+    margin: 0 0 0 15px;
+  }
+
+  .platform__bottom {
+    top: -45px;
+  }
+
+  .platform__sides-info {
+    margin: 85px auto 0;
+  }
+
+  .platform__sides-right {
+    min-width: 30%;
+  }
+
+  .platform__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .platform__bottom-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .platform__sides-left {
+    min-width: 225px;
+    padding-right: 0;
+  }
+
+  .platform__sides-title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .platform__sides-text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 20px;
+    padding-left: 0;
+  }
+
+  .platform__bottom-subtitle {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 32px;
+  }
+
+  .platform__sides-left-background {
+    display: none;
+  }
+
+  .platform__sides-left-line {
+    display: none;
+  }
+
+  .platform__sides-phone {
+    top: -30px;
+    min-width: 300px;
+  }
+}

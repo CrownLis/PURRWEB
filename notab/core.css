@@ -1,0 +1,29 @@
+@import url(fonts.css);
+@import url(normalize.css);
+@import url(./blocks/cookie.css);
+@import url(./blocks/header.css);
+@import url(./blocks/footer.css);
+@import url(./blocks/1block-platform.css);
+@import url(./blocks/2block-phoneSlider.css);
+@import url(./blocks/3block-idScanner.css);
+@import url(./blocks/4block-toolIntegration.css);
+@import url(./blocks/5block-qrCode.css);
+@import url(./blocks/6block-generateCode.css);
+@import url(./blocks/7block-guests.css);
+@import url(./blocks/8block-noTab.css);
+@import url(./blocks/9block-form.css);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}

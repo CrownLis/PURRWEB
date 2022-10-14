@@ -1,0 +1,239 @@
+.qr-code {
+  background-image: url(./../assets/images/jpg/background-5block.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 200px 0 0;
+}
+
+.qr-code__footer {
+  text-align: right;
+}
+
+.qr-code__wrapper {
+  position: relative;
+  display: flex;
+  margin: 0 100px 600px;
+}
+
+.qr-code__content {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-top: 30%;
+}
+
+.qr-code__info-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+  margin-top: 50px;
+}
+
+.qr-code__info-icon {
+  cursor: pointer;
+}
+
+.qr-code__info-icon:hover {
+  opacity: 0.8;
+}
+
+.qr-code__info-title {
+  font-family: "Montserrat";
+  font-size: 51px;
+  line-height: 62px;
+}
+
+.qr-code__info-text {
+  font-family: "Noto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  max-width: 315px;
+  margin-top: 20px;
+}
+
+.qr-code__phones {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  margin-left: 50%;
+}
+
+.qr-code__phone-first,
+.qr-code__phone-second {
+  position: relative;
+}
+
+.qr-code__phone-second {
+  margin-left: 330px;
+  top: -330px;
+}
+
+.qr-code__phone-img {
+  width: 330px;
+}
+
+.qr-code__phone-second .qr-code__phone-img {
+  top: 560px;
+  left: 0;
+  margin-left: 80px;
+}
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .qr-code {
+    margin: 150px 0 0;
+  }
+
+  .qr-code__wrapper {
+    margin: 0 50px 150px;
+    padding-top: 240px;
+  }
+
+  .qr-code__info-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .qr-code__info-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .qr-code__phone-img {
+    width: 220px;
+  }
+
+  .qr-code__content {
+    margin-top: 10%;
+  }
+
+  .qr-code__phone-second {
+    margin-left: 220px;
+    top: -220px;
+  }
+
+  .qr-code__info-icons {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 565px) {
+  .qr-code {
+    margin: 150px 0 125px;
+  }
+
+  .qr-code__wrapper {
+    flex-direction: column;
+    margin: 0 25px 150px;
+    padding-top: 240px;
+  }
+
+  .qr-code__content {
+    margin-top: 10%;
+  }
+
+  .qr-code__info-title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .qr-code__info-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .qr-code__phone-img {
+    width: 220px;
+  }
+
+  .qr-code__phone-second {
+    margin-left: 220px;
+    top: -220px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .qr-code {
+    background-image: none;
+    margin: 50px 0 125px;
+  }
+
+  .qr-code__wrapper {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .qr-code__phones {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 0;
+  }
+
+  .qr-code__content {
+    width: 100%;
+    padding: 220px 0 0;
+    background-image: url(./../assets/images/jpg/background-5block-mobile1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .qr-code__phones {
+    background-image: url(./../assets/images/jpg/background-5block-mobile2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 20px 0;
+  }
+
+  .qr-code__info {
+    margin: 0 15px;
+  }
+
+  .qr-code__info-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .qr-code__info-text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 20px;
+    max-width: none;
+  }
+
+  .qr-code__info-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qr-code__info-icons .qr-code__phone-img {
+    max-width: 185px;
+  }
+
+  .qr-code__phone-first {
+    padding-top: 55%;
+  }
+
+  .qr-code__phone-second {
+    top: 0;
+    margin-left: 0px;
+  }
+
+  .qr-code__phone-second .qr-code__phone-img {
+    margin-left: 0px;
+  }
+
+  .qr-code__phone-img {
+    max-width: 290px;
+    max-height: 575px;
+  }
+
+  .qr-code__phone-first,
+  .qr-code__phone-second {
+    text-align: center;
+  }
+}

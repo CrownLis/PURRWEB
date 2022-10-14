@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  min-height: 110px;
+  padding: 15px 0;
+  margin: 0 100px;
+  box-sizing: border-box;
+}
+
+.header__notab-wrapper,
+.header__nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__notab {
+  width: 96px;
+  height: 25px;
+}
+
+.header__nav-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 110px;
+}
+
+.header__nav-link {
+  font-family: "Noto";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: inherit;
+  margin-left: 14px;
+}
+
+.header__nav-link:hover {
+  opacity: 0.8;
+}
+
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .header {
+    margin: 0 50px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 565px) {
+  .header {
+    margin: 0 25px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .header {
+    justify-content: space-between;
+    margin: 0 15px;
+  }
+  .header__nav-icon {
+    display: none;
+  }
+
+  .header__notab {
+    max-width: 48px;
+  }
+
+  .header__cube {
+    max-width: 51px;
+  }
+}

@@ -1,0 +1,42 @@
+.no-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(./../assets/images/png/background-8block.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-size: cover;
+  padding: 250px 0;
+  box-sizing: border-box;
+}
+
+.no-tab__img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .no-tab {
+    padding: 200px 0;
+  }
+
+  .no-tab__img {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 565px) {
+  .no-tab {
+    padding: 150px 0;
+  }
+
+  .no-tab__img {
+    max-width: 60%;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .no-tab {
+    display: none;
+  }
+}

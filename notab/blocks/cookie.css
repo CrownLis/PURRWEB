@@ -1,0 +1,59 @@
+.cookie {
+  display: flex;
+  position: fixed;
+  bottom: -100px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Noto";
+  background-color: #212834;
+  padding: 20px 15px 20px 100px;
+  z-index: 10;
+}
+
+.cookie__text {
+  font-family: "Noto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.cookie__button {
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 0.5px solid #ffffff;
+  border-radius: 6px;
+  padding: 15px 40px;
+  margin-left: 20px;
+  color: inherit;
+  cursor: pointer;
+}
+
+.cookie__button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 992px) and (min-width: 767px) {
+  .cookie {
+    padding: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 565px) {
+  .cookie {
+    padding: 20px 25px;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .cookie {
+    padding: 20px 15px;
+  }
+
+  .cookie__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
